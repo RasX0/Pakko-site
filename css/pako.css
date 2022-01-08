@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 21px 15px;
+}
+.nav {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav_item {
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+.nav_item:first-child {
+    margin-left: 0;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: black;
+}
+.purple {
+    color:#624DE3;
+}
+.nav_btn {
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #624DE3;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+}
+
+.container {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.banner {
+    text-align: center;
+    background-color: #100A30;
+    color: #fff;
+    position: relative;
+    padding-bottom: 757px;
+
+}
+.banner_title {
+    font-size: 55px;
+    max-width: 570px;
+    margin:0 auto;
+    padding-top: 62px;
+    padding-bottom: 20px;
+}
+.banner_text {
+    color: #fff 70%;
+}
+
+.banner_img {
+    position: absolute;
+    bottom: -172px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+}
+.btn-group__btn {
+    border:1px solid white;
+    font-size: 16px;
+    padding: 15px 37px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 0 8px;
+}
+.btn-group__btn-main {
+    font-size: 15px;
+    background-color: #624DE3;
+    border: 1px solid #624DE3;
+    padding: 16px 37px;
+}
+
+.section {
+    padding-top: 150px;
+    margin-bottom: 205px;
+}
+
+.section_title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.tarif-header {
+    padding-top: 100px;
+    border-radius:8px 8px 0 0;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tarif-info {
+    background-color: #100A30;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px 30px 35px;
+    position: relative;
+
+}
+
+.tarif-info::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-image: url(/img/item.svg);
+    position: absolute;
+    top: -45px;
+    left: 0;
+
+}
+
+
+.tarif-info_title {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.tarif-info_title::before {
+    content: '';
+    display: block;
+    background-image: url(/img/logo-min.svg);
+    width: 61px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 13px;
+}
+
+
+.tarif-info_price {
+    font-size: 48px;
+    margin: 0;
+}
+
+.tarif-info_price span {
+    font-size: 15px;
+}
+
+
+.tarifs {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+.tarif-item01 .tarif-footer {
+    background-color: rgba(16, 10, 48, 0.03);
+}
+.tarif-item02 .tarif-footer {
+    background-color:rgba(25, 199, 135, 0.05);;
+}
+.tarif-item03 .tarif-footer {
+    background-color: rgba(252, 185, 52, 0.05);
+}
+
+.tarif-footer {
+    border-radius:0 0 8px 8px;
+    padding: 24px 30px;
+}
+
+.tarif-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tarif-item {
+    flex: 0 0 32%;
+}
+.tarif-list_item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tarif-list_item::before {
+    display: block;
+    content:'';
+    width: 20px;
+    height: 20px; 
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+}
+
+.tarif-item01 .tarif-list_item::before {
+    background-image: url(/img/check-01.svg);
+}
+.tarif-item02 .tarif-list_item::before {
+    background-image: url(/img/check-02.svg);
+}
+.tarif-item03 .tarif-list_item::before {
+    background-image: url(/img/check-03.svg);
+}
+
+.tarif-item01 .tarif-header {
+    background-image: url(/img/tarif-01.svg);
+}
+.tarif-item02 .tarif-header {
+    background-image: url(/img/tarif-02.svg);
+}
+.tarif-item03 .tarif-header {
+    background-image: url(/img/tarif-03.svg);
+}
+
+.tarif-item02 .tarif-info_title {
+    color:#19C787;
+}
+.tarif-item03 .tarif-info_title {
+    color:#FF9F1C;
+}
